@@ -1,3 +1,93 @@
+*{
+  outline: 1px solid black;
+}
 body {
   background: papayawhip;
+}
+
+.container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.a{
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  line-height: 25;
+  margin: 5px;
+}
+.b{
+  line-height: 50;
+  width: 100%;
+  text-align: center;
+  height: 100%;
+  margin: 5px;
+  
+}
+.c, .d, .e{
+  width: 32%;
+  height: 100%;
+  text-align: center;
+  line-height: 25;
+  margin: 5px;
+}
+.f{
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  line-height: 25;
+  margin: 5px;
+}
+@media (min-width:600px) 
+  .container {
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    Height: 100%;
+  }
+    .a{
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      line-height: 20;
+      margin: 10px
+      order: 1
+     }
+     .b{
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      line-height: 30;
+      margin: 5px;
+      order: 2
+     } 
+ .c, .d, .e{
+  width: 32%;
+order: 4
+ }
+ .f{
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  line-height: 56;
+  margin: 5px;
+  order: 3;
+
+ }
+ .container2 {
+  order: 2;
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  width: 100%;
+  Height: 100%;
 }
